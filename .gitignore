@@ -1,4 +1,4 @@
-.code-workspace
-.pdf
-.xlsx
+*.code-workspace
+*.pdf
+*.xlsx
 myenv/
