@@ -205,12 +205,5 @@ def main():
     for file_path in file_paths:
         process_file(file_path, ocr, implicit_rows, implicit_columns, borderless_tables)
 
-    # At the end of processing, ask if the user wants to run cross verification
-    verify_choice = input("Do you want to run cross verification on the extracted tables? (Y/N): ").strip().lower()
-    if verify_choice == "y":
-        import subprocess
-        # This assumes cross_verification.py is in the same directory.
-        subprocess.run(["python", "cross_verification.py"])
-
 if __name__ == "__main__":
     main()
