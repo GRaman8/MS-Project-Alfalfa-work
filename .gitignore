@@ -2,3 +2,5 @@
 *.pdf
 *.xlsx
 myenv/
+.env
+*.csv
